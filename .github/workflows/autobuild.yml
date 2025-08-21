@@ -16,7 +16,7 @@ jobs:
       changed: ${{ steps.check.outputs.changed }}
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Restore version cache
         id: cache
@@ -78,7 +78,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Init submodules
         run: |
